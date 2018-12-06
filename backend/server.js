@@ -11,12 +11,12 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, 'dist/what2eat')));
+app.use(express.static(path.join(__dirname, '../frontend/dist/what2eat')));
 app.use('/api', status);
 
 // redirect all requests (except api) to the index page.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/what2eat/index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/dist/what2eat/index.html'));
 });
 
 const appPort = process.env.PORT || 4600;
