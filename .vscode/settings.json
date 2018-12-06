@@ -2,5 +2,7 @@
     "favorites.resources": [
         "server.js",
         "server"
-    ]
+    ],
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16
 }
